@@ -1,4 +1,5 @@
 import { StyleSheet, Text, View, Image } from "react-native";
+import Ionicon from "@expo/vector-icons/Ionicons"; // Daqui usar o "finger-print"
 
 const Home = () => {
   return (
@@ -15,7 +16,10 @@ const Home = () => {
         <Text style={styles.description}>Desenvolvedor Web</Text>
       </View>
       <View></View>
-      <View></View>
+      <View style={{ alignItems: "center" }}>
+        <Ionicon name="finger-print" size={60} color="#FFF" />
+        <Text style={styles.RegisterText}>Registrar Ponto</Text>
+      </View>
     </View>
   );
 };
@@ -55,10 +59,15 @@ const styles = StyleSheet.create({
     borderRadius: 200,
   },
   image: {
-    width: 200,
-    height: 200,
+    width: 150,
+    height: 150,
     borderRadius: 200,
     backgroundColor: "white",
     marginVertical: 15,
+  },
+  RegisterText: {
+    color: "#FFF",
+    fontSize: 18,
+    marginTop: 5,
   },
 });

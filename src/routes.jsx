@@ -3,7 +3,6 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 import FontAwesome6 from "@expo/vector-icons/FontAwesome6"; //daqui usar o icon "clock" e "user"
 import AntDesign from "@expo/vector-icons/AntDesign"; // daqui usar o icon "calendar"
-import Ionicon from "@expo/vector-icons/Ionicons"; // Daqui usar o "finger-print"
 
 import Home from "./screens/Home";
 import RegisterScreen from "./screens/RegistersScreen";
@@ -35,7 +34,7 @@ export default function Routes() {
             <AntDesign name="calendar" size={size} color={color} />
           ),
         }}
-        name="Registers"
+        name="Registros"
         component={RegisterScreen}
       />
       <Tab.Screen
@@ -46,7 +45,7 @@ export default function Routes() {
             <FontAwesome6 name="clock" size={size} color={color} />
           ),
         }}
-        name="Home"
+        name="Início"
         component={Home}
       />
       <Tab.Screen
@@ -57,7 +56,7 @@ export default function Routes() {
             <FontAwesome6 name="user" size={size} color={color} />
           ),
         }}
-        name="Profile"
+        name="Perfil"
         component={Profile}
       />
     </Tab.Navigator>
